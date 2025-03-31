@@ -8,6 +8,7 @@ on:
 
 env:
   node-version: 18
+  Secrets_Value: ${{secrets.MY_SECRETS}}
 
 jobs:
   My_build:
