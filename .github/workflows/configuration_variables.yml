@@ -12,7 +12,6 @@ jobs:
       Greeting: Hello
     steps:
       - name: "Say Hello to Vishal"
+        run: echo "$Greeting $First_Name is using $cloud with project ${{vars.PROJECT_ID}}!"
         env:
           First_Name: Vishal
-          PROJECT_ID: ${{ vars.PROJECT_ID }} # Assigning GitHub variable to env
-        run: echo "$Greeting $First_Name is using $cloud with project $PROJECT_ID!"
